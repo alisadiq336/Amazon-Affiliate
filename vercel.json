@@ -7,6 +7,26 @@
     {
       "source": "/uploads/:path*",
       "destination": "/api"
+    },
+    {
+      "source": "/assets/:path*",
+      "destination": "/client/dist/assets/:path*"
+    },
+    {
+      "source": "/favicon.svg",
+      "destination": "/client/dist/favicon.svg"
+    },
+    {
+      "source": "/icons.svg",
+      "destination": "/client/dist/icons.svg"
+    },
+    {
+      "source": "/products_template.csv",
+      "destination": "/client/dist/products_template.csv"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/client/dist/index.html"
     }
   ]
 }
